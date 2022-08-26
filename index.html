@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src ="script.js"></script>
+<body>
+    <p><input type= 'text' id="input" value=0>Calculate Something!</p>
+    <div id = "container">
+        <div id = "grid-container-1">
+            <div class = "grid-item-1">
+                <button type = 'button' id = 'n1' class small onclick="numbers(1)">1</button>
+                <button type = 'button' id = 'n2' class small onclick="numbers(2)">2</button>
+                <button type = 'button' id = 'n3' class small onclick="numbers(3)">3</button>
+                <button type = 'button' id = 'n4' class small onclick="numbers(4)">4</button>
+                <button type = 'button' id = 'n5' class small onclick="numbers(5)">5</button>
+                <button type = 'button' id = 'n6' class small onclick="numbers(6)">6</button>
+                <button type = 'button' id = 'n7' class small onclick="numbers(7)">7</button>
+                <button type = 'button' id = 'n8' class small onclick="numbers(8)">8</button>
+                <button type = 'button' id = 'n9' class small onclick="numbers(9)">9</button>
+                <button type = 'button' id = 'n0' class small onclick="numbers(0)">0</button>
+                <button type = 'button' id = 'n=' class medium onclick="equal()">=</button>
+             
+            </div>
+            <div class = "grid-item-2">
+                <button type = 'button' id = 'n+' class medium onclick="storeNum1(), addButton()">+</button>
+                <button type = 'button' id = 'n-' class medium onclick="storeNum1(), subButton()">-</button>
+                <button type = 'button' id = 'n*' class medium onclick="storeNum1(), multButton()">*</button>
+                <button type = 'button' id = 'n/' class medium onclick="storeNum1(), divButton()">/</button>
+            </div>
+            <div clas = "grid-item-3">
+                
+                <button type = 'button' id = 'nclear' class medium onClick="clearInput()">CLEAR</button>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
