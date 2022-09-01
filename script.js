@@ -136,10 +136,11 @@ function equal(){
     if(operBool == false){
         val1, val2 = 0;
         document.getElementById("display").textContent = "Please clear and try again with valid values.";
+        return;
     }
 
-    else if (val1 == 0 && val2 == 0){
-        val1, val2 = 0;
+    else if ((val1) && (val2) && (operBool)){
+        // val1, val2 = 0;
         return document.getElementById("display").textContent = "Please clear and enter values with an operator :)";
     }
     val2 = Number(document.querySelector("input").value);
